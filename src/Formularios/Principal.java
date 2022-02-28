@@ -29,66 +29,73 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        R_Productos = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        contenedor = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Inventario");
         setIconImage(getIconImage());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setMaximumSize(new java.awt.Dimension(1024, 720));
-        jPanel1.setMinimumSize(new java.awt.Dimension(1024, 720));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1024, 720));
+        jPanel1.setMaximumSize(new java.awt.Dimension(1024, 700));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1024, 700));
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setPreferredSize(new java.awt.Dimension(1024, 700));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel1.setText("Mini Súper Ruiz");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 15, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 5, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/producto.png"))); // NOI18N
-        jButton3.setToolTipText("");
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, -1, -1));
+        R_Productos.setBackground(new java.awt.Color(255, 255, 255));
+        R_Productos.setForeground(new java.awt.Color(255, 255, 255));
+        R_Productos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/producto.png"))); // NOI18N
+        R_Productos.setToolTipText("");
+        R_Productos.setBorder(null);
+        R_Productos.setBorderPainted(false);
+        R_Productos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                R_ProductosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(R_Productos, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/salida-producto.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, -1, -1));
 
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
         jSeparator1.setPreferredSize(new java.awt.Dimension(50, 20));
         jSeparator1.setRequestFocusEnabled(false);
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 150, 940, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 140, 940, 10));
 
         jSeparator2.setForeground(new java.awt.Color(51, 51, 51));
         jSeparator2.setPreferredSize(new java.awt.Dimension(50, 20));
         jSeparator2.setRequestFocusEnabled(false);
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 70, 940, 10));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 60, 940, 10));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregar-usuario.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, -1, -1));
 
         jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrada-producto.png"))); // NOI18N
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
 
         jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
@@ -96,7 +103,22 @@ public class Principal extends javax.swing.JFrame {
         jButton5.setToolTipText("");
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 70, -1, -1));
+
+        contenedor.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout contenedorLayout = new javax.swing.GroupLayout(contenedor);
+        contenedor.setLayout(contenedorLayout);
+        contenedorLayout.setHorizontalGroup(
+            contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 940, Short.MAX_VALUE)
+        );
+        contenedorLayout.setVerticalGroup(
+            contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 540, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(contenedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 940, 540));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -111,6 +133,13 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void R_ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_R_ProductosActionPerformed
+        Productos f = new Productos();
+        contenedor.add(f);
+        f.show();
+              // TODO add your handling code here:
+    }//GEN-LAST:event_R_ProductosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,9 +172,10 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton R_Productos;
+    private javax.swing.JDesktopPane contenedor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;

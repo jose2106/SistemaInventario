@@ -87,7 +87,6 @@ public class Login extends javax.swing.JFrame {
         setIconImage(getIconImage());
         setMaximumSize(new java.awt.Dimension(1024, 720));
         setMinimumSize(new java.awt.Dimension(1024, 720));
-        setPreferredSize(new java.awt.Dimension(1024, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
